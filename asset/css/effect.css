@@ -1,0 +1,68 @@
+.Animtion1{
+    animation: Animtion1 2s ease 0s infinite alternate none;
+    filter:drop-shadow(3px 2.4deg    2px rgba(0, 0, 0, 0.2))
+}
+
+@keyframes Animtion1 {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+.Frame{
+    aspect-ratio: 1;
+    /* outline: calc(250px / 2) solid #0009; */
+    outline-offset: calc(250px / -2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Frame:hover {
+  outline: 2px solid #005AE2;
+  outline-offset:14px;
+  transform: scale(1.05);
+  backdrop-filter: blur(5px) !important;
+
+}
+#btn-hover{
+    transition: 0.5s ease;
+}
+#btn-hover:hover{
+    background-color: #002863;
+    transform: scale(1.07);
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #005AE2;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+nav ul li a:hover{
+    color: #005AE2;
+}
